@@ -1,0 +1,30 @@
+{
+  "name": "spv-beta",
+  "version": "0.0.0",
+  "description": "cft spv project in beta",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "mysql",
+    "rest",
+    "api"
+  ],
+  "author": "Chris-AM",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
