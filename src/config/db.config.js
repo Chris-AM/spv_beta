@@ -1,5 +1,4 @@
 const { Sequelize } = require('sequelize');
-
 const sequelize = new Sequelize(
     process.env.DB,
     process.env.DB_USER,
@@ -14,7 +13,7 @@ const sequelize = new Sequelize(
     }
 });
 
-const dbConfig = async() =>{
+const dbConfig = async () => {
     try {
         await sequelize.authenticate();
         console.log('Connection Stablished')
@@ -23,6 +22,9 @@ const dbConfig = async() =>{
         throw new Error('Error trying to connect');
     }
 }
+
+
 module.exports = {
-    dbConfig
+    dbConfig,
+    sequelize
 }
